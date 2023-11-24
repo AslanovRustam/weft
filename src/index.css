@@ -1,20 +1,40 @@
 @import "../node_modules/modern-normalize/modern-normalize.css";
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --white: #fff;
+  --black-40: rgba(0, 0, 0, 0.4);
+  --white-8: rgba(255, 255, 255, 0.08);
+  --white-16: rgba(255, 255, 255, 0.16);
+  --white-40: rgba(255, 255, 255, 0.4);
+  --white-60: rgba(255, 255, 255, 0.6);
+  --primary: #817eff;
+  --primary-80: rgba(129, 126, 255, 0.8);
+  --gradient-269: linear-gradient(269deg, #817eff 55.96%, #fff 99.05%);
+  --gradient-266: linear-gradient(266deg, #817eff 55.76%, #fff 98.63%);
+  --gradient-105: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0.16) 0.07%,
+    rgba(167, 165, 255, 0.16) 100%
+  );
+  --bg: #0d1323;
+  --grey-bg: rgba(183, 205, 255, 0.24);
+  --grey2-bg: rgba(255, 255, 255, 0.08);
+  --purple-bg: rgba(129, 126, 255, 0.24);
+  --bd-filter: blur(20px);
 }
 html,
 body {
-  font-size: 0.833vw;
-  font-family: Stolzl;
+  font-size: 1.1vw;
+  font-family: Manrope;
+  font-weight: 600;
+  line-height: normal;
+  scroll-behavior: smooth;
+  color: var(--white);
 }
 * {
   margin: 0;
@@ -28,9 +48,38 @@ video {
   /* max-width: 100%; */
   height: auto;
 }
+main {
+  background: url(./assets/images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 @font-face {
   font-family: "Stolzl";
-  font-weight: 400;
+  font-weight: 700;
   src: local("Stolzl"),
-    url(./assets/fonts/Stolzl\ Regular.otf) format("opentype");
+    url(./assets/fonts/Stolzl/Stolzl\ Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 500;
+  src: local("Manrope"),
+    url(./assets/fonts/Manrope/Manrope-Medium.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 600;
+  src: local("Manrope"),
+    url(./assets/fonts/Manrope/Manrope-SemiBold.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 700;
+  src: local("Manrope"),
+    url(./assets/fonts/Manrope/Manrope-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 800;
+  src: local("Manrope"),
+    url(./assets/fonts/Manrope/Manrope-ExtraBold.ttf) format("opentype");
 }

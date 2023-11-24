@@ -1,0 +1,20 @@
+.navList {
+  display: flex;
+  align-items: center;
+}
+.navItem {
+  padding: 1rem 0.56rem;
+  cursor: pointer;
+  color: var(--white-60);
+  transition: all 0.3s ease-in-out;
+}
+.navItem:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.navItem:hover,
+.navItem:focus {
+  color: var(--white);
+}
+.navLink {
+  color: inherit;
+}

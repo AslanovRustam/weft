@@ -1,0 +1,32 @@
+header {
+  background-color: var(--bg);
+  border-bottom: 0.01rem solid var(--white-40);
+  backdrop-filter: blur(30px);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.logo {
+  width: 6.5rem;
+  margin-right: 2.25rem;
+  fill: var(--white);
+  color: red;
+}
+.langContainer {
+  display: flex;
+  align-items: center;
+  color: var(--white-60);
+  line-height: 140%;
+}
+.lang {
+  width: 1.125rem;
+  margin-right: 0.5rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
