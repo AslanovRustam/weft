@@ -16,11 +16,8 @@
   --primary-80: rgba(129, 126, 255, 0.8);
   --gradient-269: linear-gradient(269deg, #817eff 55.96%, #fff 99.05%);
   --gradient-266: linear-gradient(266deg, #817eff 55.76%, #fff 98.63%);
-  --gradient-105: linear-gradient(
-    105deg,
-    rgba(255, 255, 255, 0.16) 0.07%,
-    rgba(167, 165, 255, 0.16) 100%
-  );
+  --gradient-105: hsla(0, 0%, 100%, 0.16);
+  --gradient-105_2: hsla(0, 0%, 100%, 0.08);
   --bg: #0d1323;
   --grey-bg: rgba(183, 205, 255, 0.24);
   --grey2-bg: rgba(255, 255, 255, 0.08);
@@ -29,12 +26,14 @@
 }
 html,
 body {
+  /* height: 100vh; */
   font-size: 1.1vw;
   font-family: Manrope;
   font-weight: 600;
   line-height: normal;
   scroll-behavior: smooth;
   color: var(--white);
+  overflow-x: hidden;
 }
 * {
   margin: 0;
@@ -45,13 +44,15 @@ body {
 }
 img,
 video {
-  /* max-width: 100%; */
+  display: block;
+  width: 100%;
   height: auto;
 }
 main {
   background: url(./assets/images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 @font-face {
   font-family: "Stolzl";

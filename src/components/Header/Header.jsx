@@ -11,7 +11,9 @@ export default function Header() {
       <Container>
         <div className={s.container}>
           <div className={s.langContainer}>
-            <img className={s.logo} src={logo} alt="weiss logo" />
+            <a href="#">
+              <img className={s.logo} src={logo} alt="weiss logo" />
+            </a>
             <img className={s.lang} src={lang} alt="lang" />
             <span>En</span>
           </div>

@@ -1,0 +1,40 @@
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.contentContainer {
+  width: 33.05rem;
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+.title {
+  color: var(--white);
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 3rem;
+}
+.info {
+  margin: 1.5rem 0;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.textContainer {
+  width: 50%;
+}
+.imgContainer {
+  width: 30.65rem;
+  /* height: 25rem; */
+}
+.image {
+  width: 100%;
+}

@@ -1,8 +1,13 @@
 import s from "./button.module.css";
 
-export default function Button({ text, grey }) {
+export default function Button({ text, grey, icon, fontSize }) {
   return (
-    <button className={`${s.btn} ${grey && s.grey}`} type="button">
+    <button
+      style={{ fontSize: fontSize }}
+      className={`${s.btn} ${grey && s.grey}`}
+      type="button"
+    >
+      {icon && icon}
       {text}
     </button>
   );
