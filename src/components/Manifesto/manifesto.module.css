@@ -1,0 +1,57 @@
+.container,
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleContainer {
+  margin-bottom: 2.5rem;
+}
+.title {
+  font-size: 3.375rem;
+  font-weight: 800;
+}
+.title span {
+  background: linear-gradient(267deg, #817eff 60.18%, #fff 98.73%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subTitle {
+  max-width: 50rem;
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.item {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 0.75rem);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  background: var(--white-8, rgba(255, 255, 255, 0.08));
+}
+.iconContainer {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(315deg, #3c39cc 0%, #9d9bff 100%);
+  gap: 0.625rem;
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
