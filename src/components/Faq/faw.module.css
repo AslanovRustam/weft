@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  gap: 2.5rem;
+}
+.title {
+  font-size: 3.375rem;
+  font-weight: 800;
+}
+.subTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.image {
+  width: 33.75rem;
+}

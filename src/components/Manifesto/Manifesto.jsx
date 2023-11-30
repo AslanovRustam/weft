@@ -6,7 +6,7 @@ import s from "./manifesto.module.css";
 
 export default function Manifesto() {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="manifesto">
       <div className={s.titleContainer}>
         <h2 className={s.title}>
           <span>WEFT</span> Manifesto

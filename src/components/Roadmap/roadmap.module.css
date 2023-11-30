@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+}
+.title {
+  margin-bottom: 2.5rem;
+
+  font-size: 3.375rem;
+  font-weight: 800;
+}

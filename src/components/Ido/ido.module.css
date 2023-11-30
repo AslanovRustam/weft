@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+}
+.title {
+  font-size: 3.375rem;
+  font-weight: 800;
+}
+.list {
+  margin: 2.5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.idoContainer {
+  display: flex;
+}
+.idoTitle {
+  color: var(--white-80, rgba(255, 255, 255, 0.8));
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.idoInfo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.btnContainer,
+.btn {
+  display: flex;
+}
+.btn {
+  margin-right: 0.5rem;
+  padding: 0rem 0.5rem 0rem 0.125rem;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 0.5rem;
+  background: rgba(0, 255, 179, 0.4);
+}
+.btnBlue {
+  composes: btn;
+  background: rgba(0, 133, 255, 0.5);
+}
+.desc {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.itemTime {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 0 0;
+  border-radius: 1rem;
+  background-color: rgba(167, 165, 255, 0.16);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.itemTime:hover,
+.itemTime:focus {
+  background-color: rgba(167, 165, 255, 0.08);
+}
+.itemTtitle {
+  padding: 0rem 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--secondary, #c2c0ff);
+  border-radius: 0.5rem;
+  background: var(--secondary-16, rgba(194, 192, 255, 0.16));
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.itemWhen {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+.bonuses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--white-8, rgba(255, 255, 255, 0.08));
+}
+.bonusTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+.bonusDescription {
+  color: var(--white-80, rgba(255, 255, 255, 0.8));
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.information {
+  color: var(--secondary, #c2c0ff);
+  font-weight: 700;
+  line-height: 140%;
+}
+.iconFoot {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  fill: var(--secondary, #c2c0ff);
+}

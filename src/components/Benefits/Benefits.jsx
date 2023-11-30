@@ -5,7 +5,7 @@ import s from "./benefits.module.css";
 
 export default function Benefits() {
   return (
-    <div className={s.container}>
+    <div className={s.container} id="benefits">
       <h2 className={s.title}>
         <span>Token</span> Benefits
       </h2>

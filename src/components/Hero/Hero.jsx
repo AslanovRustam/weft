@@ -1,12 +1,12 @@
 import Button from "../Button/Button";
+import Ticker from "../Ticker/Ticker";
+import Container from "../Container/Container";
 import Twit from "../../assets/images/socials/twit.svg?react";
 import Discord from "../../assets/images/socials/discord.svg?react";
 import Tg from "../../assets/images/socials/tg.svg?react";
 import IGaming from "../../assets/images/iGaming.svg?react";
 import Betting from "../../assets/images/Betting.svg?react";
 import s from "./hero.module.css";
-import Ticker from "../Ticker/Ticker";
-import Container from "../Container/Container";
 
 export default function Hero() {
   return (

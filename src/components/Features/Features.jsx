@@ -15,7 +15,7 @@ export default function Features() {
   };
 
   return (
-    <section className={s.section}>
+    <section className={s.section} id="features">
       <ul className={s.titleList}>
         <li
           onClick={selectActiveTab}
