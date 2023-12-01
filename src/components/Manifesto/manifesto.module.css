@@ -4,6 +4,9 @@
   flex-direction: column;
   align-items: center;
 }
+.container {
+  scroll-margin-top: 10rem;
+}
 .titleContainer {
   margin-bottom: 2.5rem;
 }

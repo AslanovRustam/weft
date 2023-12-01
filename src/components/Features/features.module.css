@@ -1,3 +1,6 @@
+.section {
+  scroll-margin-top: 10rem;
+}
 .titleList {
   display: flex;
   gap: 2rem;

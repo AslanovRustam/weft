@@ -18,3 +18,8 @@
 .navLink {
   color: inherit;
 }
+@media (orientation: portrait) {
+  /* nav {
+    display: none;
+  } */
+}

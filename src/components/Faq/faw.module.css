@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
+  scroll-margin-top: 10rem;
 }
 .title {
   font-size: 3.375rem;
@@ -12,5 +13,10 @@
   line-height: 2rem;
 }
 .image {
-  width: 33.75rem;
+  width: 32.45rem;
+}
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

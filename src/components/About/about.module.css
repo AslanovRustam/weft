@@ -1,6 +1,7 @@
 .list {
   display: flex;
   flex-direction: column;
+  scroll-margin-top: 10rem;
 }
 .item {
   display: flex;

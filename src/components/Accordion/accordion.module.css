@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1rem;
+  background: var(--white-8, rgba(255, 255, 255, 0.08));
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.activeContainer {
+  background: rgba(129, 126, 255, 0.24);
+}
+.titleContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 2rem;
+}
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+.activeArrow {
+  transform: rotate(0deg);
+}
+
+.text {
+  color: var(--white-80, rgba(255, 255, 255, 0.8));
+  font-weight: 500;
+  line-height: 1.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.activeText {
+  padding-top: 1rem;
+}

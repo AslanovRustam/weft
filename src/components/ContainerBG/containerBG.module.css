@@ -1,14 +1,19 @@
 .container {
-  display: flex;
+  /* display: flex; */
   max-width: 75rem;
   padding: 2.5rem;
   margin: 2.5rem 9.75rem;
-  flex-direction: column;
+  /* flex-direction: column;
   align-items: flex-start;
   gap: 4rem;
-  align-self: stretch;
+  align-self: stretch; */
   border-radius: 3rem;
   border: 1px solid var(--white-16);
   background: rgba(183, 205, 255, 0.24);
   backdrop-filter: var(--bd-filter);
+}
+@media (orientation: portrait) {
+  .container {
+    margin: 2.5rem 0;
+  }
 }
