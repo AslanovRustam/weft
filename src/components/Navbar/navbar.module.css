@@ -19,7 +19,14 @@
   color: inherit;
 }
 @media (orientation: portrait) {
-  /* nav {
-    display: none;
-  } */
+  .navList {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .navItem {
+    color: var(--white, #fff);
+    font-weight: 600;
+    font-size: 1.7rem;
+    line-height: 140%;
+  }
 }

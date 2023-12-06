@@ -28,4 +28,19 @@
 }
 .containerActive {
   transform: translateY(0);
+  width: 100%;
+}
+@media (orientation: portrait) {
+  .modalBackDrop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

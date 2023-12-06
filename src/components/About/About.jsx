@@ -3,7 +3,7 @@ import video from "../../assets/images/video.mp4";
 import image from "../../assets/images/weft_img.png";
 import s from "./about.module.css";
 
-export default function About() {
+export default function About({ orientation }) {
   return (
     <ul className={s.list} id="about">
       <li className={s.item}>
@@ -30,7 +30,8 @@ export default function About() {
             the blockchain's creation. <br></br>A token is a form of
             representing an asset or value on the blockchain.
           </p>
-          <Button text="Play on WEISS" />
+
+          <Button text="Play on WEISS" width={orientation && "21rem"} />
         </div>
       </li>
       <li className={s.item}>
@@ -43,7 +44,7 @@ export default function About() {
             assets for a period of time to support the operation of a
             blockchain. In return, you get more assets.
           </p>
-          <Button text="Buy WEFT" />
+          <Button text="Buy WEFT" width={orientation && "21rem"} />
         </div>
         <div className={s.contentContainer}>
           <img className={s.image} src={image} alt="logo weft" />

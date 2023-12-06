@@ -54,3 +54,11 @@
   margin-right: 0.5rem;
   fill: var(--white);
 }
+@media (orientation: portrait) {
+  .container {
+    background: url("../../assets/images/bg_top_mob.jpg");
+  }
+  .buttonsList {
+    margin-bottom: 2rem;
+  }
+}

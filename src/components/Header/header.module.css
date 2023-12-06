@@ -8,7 +8,7 @@ header {
   z-index: 1;
 }
 .menuOpen {
-  background-color: rgba(0, 0, 0, 0.24);
+  background: var(--black-24, rgba(0, 0, 0, 0.24));
   backdrop-filter: blur(40px);
 }
 .hideBtn {
@@ -78,7 +78,8 @@ header {
   transform: rotate(45deg) translateY(0.65rem) translateX(0.6em);
 }
 .item:nth-child(2).open {
-  opacity: 0;
+  /* opacity: 0; */
+  scale: 0;
 }
 .item:nth-child(3).open {
   transform: rotate(-45deg) translateY(-0.45rem) translateX(0.5em);

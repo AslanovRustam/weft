@@ -4,11 +4,8 @@ import logo from "../../assets/images/logo.svg";
 import s from "./header.module.css";
 import Navbar from "../Navbar/Navbar";
 import Button from "../Button/Button";
-import useScreenOrientationPortrait from "../../helpers/orientation";
 
-export default function Header({ showModal, setShowModal }) {
-  const orientation = useScreenOrientationPortrait();
-
+export default function Header({ showModal, setShowModal, orientation }) {
   return (
     <header className={`${showModal && s.menuOpen}`}>
       <Container>

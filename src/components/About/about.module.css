@@ -27,7 +27,7 @@
   margin: 1.5rem 0;
   color: var(--white);
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 175%;
 }
 .textContainer {
   width: 50%;
@@ -38,4 +38,24 @@
 }
 .image {
   width: 100%;
+}
+@media (orientation: portrait) {
+  .item {
+    flex-direction: column;
+  }
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .title {
+    text-align: center;
+  }
+  .info {
+    font-size: 1.7rem;
+  }
+  .textContainer {
+    order: 1;
+  }
 }

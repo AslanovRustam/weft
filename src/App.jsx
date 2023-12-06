@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Alocation from "./components/Alocation/Alocation";
 import Benefits from "./components/Benefits/Benefits";
+import { useState } from "react";
 import Contacts from "./components/Contacts/Contacts";
 import ContainerBG from "./components/ContainerBG/ContainerBG";
 import Faq from "./components/Faq/Faq";
@@ -12,21 +13,27 @@ import Manifesto from "./components/Manifesto/Manifesto";
 import Roadmap from "./components/Roadmap/Roadmap";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
 import Footer from "./components/Footer/Footer";
-import { useState } from "react";
 import Menu from "./components/Menu/Menu";
+import useScreenOrientationPortrait from "./helpers/orientation";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const orientation = useScreenOrientationPortrait();
+
   const togleModal = () => {
     setShowModal(!showModal);
   };
   return (
     <>
-      <Header showModal={showModal} setShowModal={setShowModal} />
+      <Header
+        showModal={showModal}
+        setShowModal={setShowModal}
+        orientation={orientation}
+      />
       <main>
         <Hero />
         <ContainerBG>
-          <About />
+          <About orientation={orientation} />
         </ContainerBG>
         <ContainerBG>
           <Features />
