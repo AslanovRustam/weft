@@ -4,7 +4,7 @@ import play2Earn from "../../assets/images/Play2Earn.png";
 import hold2Earn from "../../assets/images/Hold2Earn.png";
 import s from "./features.module.css";
 
-export default function Features() {
+export default function Features({ orientation }) {
   const [active, setActive] = useState({ play2Earn: true, hold2Earn: false });
 
   const selectActiveTab = () => {
@@ -49,7 +49,7 @@ export default function Features() {
               rakeback and your total earnings are available in the P2E
               Analytics section.
             </p>
-            <Button text="Play to Earn" />
+            <Button text="Play to Earn" width={orientation && "21rem"} />
           </div>
         </li>
         <li className={`${s.item} ${!active.hold2Earn && s.inActiveContent}`}>
@@ -67,7 +67,7 @@ export default function Features() {
               convenient widget.<br></br>
               <br></br> Go ahead and try out the welcome staking!
             </p>
-            <Button text="Hold to Earn" />
+            <Button text="Hold to Earn" width={orientation && "21rem"} />
           </div>
         </li>
       </ul>

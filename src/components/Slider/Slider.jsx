@@ -5,14 +5,14 @@ import "swiper/css/autoplay";
 import "swiper/css/scrollbar";
 import s from "./slider.module.css";
 
-export default function Slider() {
+export default function Slider({ orientation }) {
   const windWidth = window.innerWidth;
   console.log(windWidth);
   return (
     <Swiper
       modules={[A11y, Autoplay]}
-      //   spaceBetween={"2rem"}
-      slidesPerView={4.3}
+      spaceBetween={orientation && 16}
+      slidesPerView={orientation ? 1.3 : 4.3}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,

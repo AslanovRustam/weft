@@ -52,5 +52,28 @@
 .description {
   color: var(--white-80, rgba(255, 255, 255, 0.8));
   text-align: center;
-  line-height: 1.75rem;
+  line-height: 175%;
+}
+@media (orientation: portrait) {
+  .list {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .item {
+    width: auto;
+  }
+  .titleItem {
+    font-size: 2.76rem;
+  }
+  .iconContainer {
+    width: 7.9rem;
+    height: 7.9rem;
+  }
+  .icon {
+    width: 4.35rem;
+    height: 4.35rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
 }

@@ -10,3 +10,13 @@
 .container {
   text-align: center;
 }
+@media (orientation: portrait) {
+  .title {
+    margin-bottom: 0;
+  }
+  .image {
+    margin-left: -2rem;
+    width: 40rem;
+    height: 20rem;
+  }
+}

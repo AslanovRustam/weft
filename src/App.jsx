@@ -36,7 +36,7 @@ function App() {
           <About orientation={orientation} />
         </ContainerBG>
         <ContainerBG>
-          <Features />
+          <Features orientation={orientation} />
         </ContainerBG>
         <ContainerBG>
           <Manifesto />
@@ -45,7 +45,7 @@ function App() {
           <Benefits />
         </ContainerBG>
         <ContainerBG>
-          <Roadmap />
+          <Roadmap orientation={orientation} />
         </ContainerBG>
         <ContainerBG>
           <Alocation />

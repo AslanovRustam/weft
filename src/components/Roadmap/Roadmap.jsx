@@ -1,12 +1,11 @@
 import Slider from "../Slider/Slider";
 import s from "./roadmap.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Roadmap() {
+export default function Roadmap({ orientation }) {
   return (
     <div className={s.container}>
       <h2 className={s.title}>Roadmap</h2>
-      <Slider />
+      <Slider orientation={orientation} />
     </div>
   );
 }

@@ -23,7 +23,7 @@
 .idoTitle {
   color: var(--white-80, rgba(255, 255, 255, 0.8));
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 175%;
 }
 .idoInfo {
   font-size: 1.25rem;
@@ -96,12 +96,12 @@
 .bonusTitle {
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.75rem;
+  line-height: 175%;
 }
 .bonusDescription {
   color: var(--white-80, rgba(255, 255, 255, 0.8));
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 175%;
 }
 .information {
   display: flex;
@@ -119,4 +119,52 @@
   height: 1.5rem;
   margin-right: 0.5rem;
   fill: var(--secondary, #c2c0ff);
+}
+@media (orientation: portrait) {
+  .list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .idoTitle {
+    font-size: 1.8rem;
+  }
+  .idoInfo {
+    font-size: 2.25rem;
+  }
+  .icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-right: 0.5rem;
+  }
+  .idoContainer {
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .desc,
+  .itemTtitle,
+  .footText {
+    font-size: 1.75rem;
+  }
+  .itemTtitle {
+    padding: 0.5rem 0.75rem;
+  }
+  .itemWhen {
+    font-size: 2.57rem;
+    margin-bottom: 2rem;
+  }
+  .itemTime {
+    padding: 2.56rem;
+  }
+  .bonusTitle {
+    font-size: 2.58rem;
+    line-height: 140%;
+    margin-bottom: 1.8rem;
+  }
+  .bonusDescription {
+    font-size: 1.8rem;
+  }
+  .iconFoot {
+    width: 3.27rem;
+    height: 3.27rem;
+  }
 }
