@@ -21,7 +21,7 @@
 .title {
   font-size: 1.4rem;
   font-weight: 800;
-  line-height: 2rem;
+  line-height: 200%;
 }
 .icon {
   width: 1.5rem;
@@ -36,10 +36,25 @@
 .text {
   color: var(--white-80, rgba(255, 255, 255, 0.8));
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 175%;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 .activeText {
   padding-top: 1rem;
+}
+@media (orientation: portrait) {
+  .title {
+    max-width: 25rem;
+    text-align: start;
+    font-size: 2.5rem;
+  }
+  .text {
+    text-align: start;
+    font-size: 1.68rem;
+  }
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
 }

@@ -31,7 +31,7 @@
   color: var(--secondary, #c2c0ff);
   font-size: 0.875rem;
   font-weight: 700;
-  line-height: 1.75rem;
+  line-height: 175%;
   border-radius: 0.5rem;
   background: var(--secondary-16, rgba(194, 192, 255, 0.16));
 }
@@ -43,4 +43,30 @@
 }
 .item a {
   margin: 0 auto;
+}
+@media (orientation: portrait) {
+  .title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .list {
+    flex-direction: column;
+  }
+  .item {
+    width: auto;
+    height: auto;
+    padding: 2.5rem;
+    gap: 1.68rem;
+    border-radius: 1.68rem;
+  }
+  .icon {
+    width: 5.68rem;
+    height: 5.68rem;
+    margin-bottom: 3.36rem;
+  }
+  .name {
+    font-size: 1.47rem;
+    padding: 0.2rem 1.26rem;
+    line-height: 200%;
+  }
 }

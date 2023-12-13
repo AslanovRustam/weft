@@ -13,7 +13,7 @@
   width: 21rem;
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 200%;
 }
 .form {
   display: flex;
@@ -37,7 +37,7 @@
   padding: 1rem 1rem 1rem 3.5rem;
   color: var(--white);
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 150%;
   border-radius: 0.75rem;
   background: var(--white-16, rgba(255, 255, 255, 0.16));
   outline: none;
@@ -77,4 +77,44 @@
 }
 .errorBorder {
   border: 0.1rem solid var(--bg);
+}
+@media (orientation: portrait) {
+  .footer {
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+  .text {
+    width: auto;
+    font-size: 2.52rem;
+    line-height: 133%;
+    margin-bottom: 2.5rem;
+  }
+  .form {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.68rem;
+  }
+  .label,
+  .input,
+  .btn {
+    width: 100%;
+  }
+  .input,
+  .btn {
+    padding: 1.68rem;
+    font-size: 1.68rem;
+  }
+  .input {
+    padding-left: 5rem;
+  }
+  .icon {
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .errorMessage {
+    right: 0.8rem;
+    font-size: 1.5rem;
+    bottom: 0.3rem;
+  }
 }
